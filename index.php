@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">  
+        <meta name= "author" content="Heliane Matos">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>Lady Fingers</title>  
+        <link rel="stylesheet" href="css/reset.css">  
+        <link rel="stylesheet" href="css/styles.css"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@500&display=swap" rel="stylesheet">   
+        <link rel="icon" href="img/favicon.png" sizes="16x16" type="image/png">
+    </head> 
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="menuDesktop">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="paginas/contact.html">Contact</a></li>
+                            <li><a href="paginas/whoWeAre.html">Who we are?</a></li> 
+                            <img class="logo" src="img/logoLf.png" alt="Logo LF">
+                            <li><a href="paginas/workWithUs.html">Work with us</a></li>
+                            <li><a href="paginas/register.html">Register</a></li>
+                            <li><a href="paginas/signIn.html">Sign in</a></li>
+                            <li>
+                            <?php 
+                                session_start();
+                                echo "Olá,".$_SESSION["nome"];
+                                ?>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <!--the style´s there are "logo" colors. style="color:#F7F7F7"-->
+                    <div class="slogan">
+                        <p>Your online jewelry store</p>
+                    </div>
+                    <nav class="navbar navbar-expand-sm navbar-dark menuMobile">
+                        <a class="navbar-brand " href="#"><img class="img-fluid p-0 m-0" src="img/logoLf.png" width="90px"></a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="paginas/contact.html">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" href="paginas/whoWeAre.html">Who we are</a></li>
+                                <li class="nav-item"><a class="nav-link" href="paginas/workWithUs.html">Work with us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="paginas/register.html">Register</a></li>
+                                <li class="nav-item"><a class="nav-link" href="paginas/signIn.html">Sign in</a></li>
+                          </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="searchBar"> 
+                        <input type="search" id="psearch" name="psearch">
+                        <input type="submit" value="Buscar">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="products">
+                    
+                        <div class="card" style="width: 15rem;" >
+                            <img class="card-img-top" src="img/weddingRings.png" alt="Gold wedding rings">
+                            <div class="card-body">
+                            <h5 class="card-title" style="">Product1</h5>
+                            <p class="card-text">R$ 200,00</p>
+                            <a href="#"><button class="btn">Comprar</button></a>
+                            </div>
+                        </div>
+
+                        <!--<div class="productImages">
+                            <img src="img/weddingRings.png" alt="Gold wedding rings">
+                            <div>
+
+                            </div>
+                        </div>-->
+
+                        <div class="card" style="width: 15rem;" >
+                            <img class="card-img-top" src="img/rings.png" alt="Gold wedding rings">
+                            <div class="card-body">
+                            <h5 class="card-title" style="">Product2</h5>
+                            <p class="card-text">R$ 300,00</p>
+                            <a href="#"><button class="btn">Comprar</button></a>
+                            </div>
+                        </div>
+
+
+                        <!--<div class="productImages">
+                            
+                            <a href="#"><img src="img/rings.png" alt="Gold wedding rings"></a>
+                            <div>
+                                <div>
+                                    <a href="#">Rings</a>
+                                </div>
+                                <div>
+                                    <span>R$ 1200,00</span>
+                                </div>
+                                <div>
+                                    
+                                </div>
+                            </div>
+                        </div>-->
+
+                        <div class="card" style="width: 15rem;" >
+                            <img class="card-img-top" src="img/jewellery2.png" alt="Gold ring">
+                            <div class="card-body">
+                            <h5 class="card-title" style="">Product3</h5>
+                            <p class="card-text">R$ 110,00</p>
+                            <a href="#"><button class="btn">Comprar</button></a>
+                            </div>
+                        </div>
+
+
+                        <!--<div class="productImages">
+                            <img src="img/jewellery2.png" alt="Gold ring">
+                        </div>-->
+
+                        <div class="card" style="width: 15rem;" >
+                            <img class="card-img-top" src="img/jewellery.png" alt="Gem gold ring">
+                            <div class="card-body">
+                            <h5 class="card-title" style="">Product4</h5>
+                            <p class="card-text">R$ 100,00</p>
+                            <a href="#"><button class="btn">Comprar</button></a>
+                            </div>
+                        </div>
+                        
+                        <!--<div class="productImages">
+                            <img src="img/jewellery.png" alt="Gem gold ring"> 
+                        </div>-->
+
+                        <div class="card" style="width: 15rem;" >
+                            <img class="card-img-top" src="img/ring.png" alt="Diamond silver ring">
+                            <div class="card-body">
+                            <h5 class="card-title" style="">Product5</h5>
+                            <p class="card-text">R$ 200,00</p>
+                            <a href="#"><button class="btn">Comprar</button></a>
+                            </div>
+                        </div>
+                        
+                        <!--<div class="productImages">
+                            <img src="img/ring.png" alt="Diamond silver ring">
+                        </div>-->
+
+                        <div class="card" style="width: 15rem;" >
+                            <img class="card-img-top" src="img/wedding.png" alt="three diamond silver ring">
+                            <div class="card-body">
+                            <h5 class="card-title" style="">Product6</h5>
+                            <p class="card-text">R$ 120,00</p>
+                            <a href="#"><button class="btn">Comprar</button></a>
+                            </div>
+                        </div>
+
+
+                        <!--<div class="productImages">
+                            <img src="img/wedding.png" alt="three diamond silver ring">
+                        </div>-->
+
+                        <div class="card" style="width: 15rem;" >
+                            <img class="card-img-top" src="img/chain.png" alt="Esmerald chain">
+                            <div class="card-body">
+                            <h5 class="card-title" style="">Product7</h5>
+                            <p class="card-text">R$ 250,00</p>
+                            <a href="#"><button class="btn">Comprar</button></a>
+                            </div>
+                        </div>
+
+                        <!--<div class="productImages">
+                            <img src="img/chain.png" alt="Esmerald chain">
+                        </div>-->
+
+                        <div class="card" style="width: 15rem;" >
+                            <img class="card-img-top" src="img/beads.png" alt="Pearl necklace">
+                            <div class="card-body">
+                            <h5 class="card-title" style="">Product8</h5>
+                            <p class="card-text">R$ 150,00</p>
+                            <a href="#"><button class="btn">Comprar</button></a>
+                            </div>
+                        </div>
+
+                        <!--<div class="productImages">
+                            <img src="img/beads.png" alt="Pearl necklace">
+                        </div>-->
+
+                        <div class="card" style="width: 15rem;" >
+                            <img class="card-img-top" src="img/jewellery3.png" alt="Gold bracelets">
+                            <div class="card-body">
+                            <h5 class="card-title" style="">Product9</h5>
+                            <p class="card-text">R$ 230,00</p>
+                            <a href="#"><button class="btn">Comprar</button></a>
+                            </div>
+                        </div>
+
+
+                        <!--<div class="productImages">
+                            <img src="img/jewellery3.png" alt="Gold bracelets">
+                        </div>-->
+
+                        <div class="card" style="width: 15rem;" >
+                            <img class="card-img-top" src="img/bracelet.png" alt="Esmerald bracelet">
+                            <div class="card-body">
+                            <h5 class="card-title" style="">Product10</h5>
+                            <p class="card-text">R$ 120,00</p>
+                            <a href="#"><button class="btn">Comprar</button></a>
+                            </div>
+                        </div>
+
+                        <!--<div class="productImages">
+                            <img src="img/bracelet.png" alt="Esmerald bracelet">
+                        </div>-->
+
+                        <div class="card" style="width: 15rem;" >
+                            <img class="card-img-top" src="img/bangle.png" alt="Beads bangles">
+                            <div class="card-body">
+                            <h5 class="card-title" style="">Product11</h5>
+                            <p class="card-text">R$ 100,00</p>
+                            <a href="#"><button class="btn">Comprar</button></a>
+                            </div>
+                        </div>
+
+                        <!--<div class="productImages">
+                            <img src="img/bangle.png" alt="Beads bangles">
+                        </div>-->
+
+                        <div class="card" style="width: 15rem;" >
+                            <img class="card-img-top" src="img/pocketWatch.png" alt="Silver pocketWatch">
+                            <div class="card-body">
+                            <h5 class="card-title" style="">Product12</h5>
+                            <p class="card-text">R$ 200,00</p>
+                            <a href="#"><button class="btn">Comprar</button></a>
+                            </div>
+                        </div>
+
+                        <!--<div class="productImages">
+                            <img src="img/pocketWatch.png" alt="Silver pocketWatch">
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <footer>
+                        <p style="color:#FFCC57">© 2021 Lady Fingers - All rights reserved</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>         

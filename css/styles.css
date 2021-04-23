@@ -90,7 +90,30 @@ input[type="submit"] {
     align-items: center;
     flex-wrap: wrap;
 }
-.productImages{
+.card{
+    background-color: #534f4f;
+    margin: 15px;
+    
+}
+.card img{
+    width: 230px;
+    max-height: 200px;
+    min-height: 200px;
+}
+.card-title{
+    color: #F7F7F7;
+    font-family: 'Cormorant SC', serif;
+}
+.card-text{
+    color:  #FFCC57;
+    font-family: 'Cormorant SC', serif;
+}
+.btn{
+    background-color: #F7F7F7;
+    font-family: 'Cormorant SC', serif;
+
+}
+/*.productImages{
     background-color: #534f4f;
     margin: 15px;
 }
@@ -98,8 +121,8 @@ input[type="submit"] {
     width: 230px;
     max-height: 200px;
     min-height: 200px;
-}
-.products :hover {
+}*/
+.products > :hover {
     background-color: #111111;
 }
 .allForms {
